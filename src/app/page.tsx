@@ -1,4 +1,5 @@
 
+"use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -59,22 +60,7 @@ export default function Home() {
       <footer className="mt-10 text-xs text-neutral-100 dark:text-neutral-400 text-center drop-shadow-lg">
         &copy; {new Date().getFullYear()} AHMED ABDULNASSER. All rights reserved.
       </footer>
-      <style jsx global>{`
-        @keyframes fade-in {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in {
-          animation: fade-in 1s cubic-bezier(.4,0,.2,1) both;
-        }
-        @keyframes spin-slow {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-        .animate-spin-slow {
-          animation: spin-slow 6s linear infinite;
-        }
-      `}</style>
+  {/* Animations moved to Tailwind config or global CSS for compatibility */}
     </div>
   );
 }
