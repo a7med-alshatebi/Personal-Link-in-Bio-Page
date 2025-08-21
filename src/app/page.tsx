@@ -21,7 +21,7 @@ export default function Home() {
             />
           </div>
           <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-pink-400 to-purple-400 tracking-tight drop-shadow-lg text-center">AHMED ABDULNASSER</h1>
-          <p className="text-center text-lg text-neutral-300 font-medium">Web Developer <span className="mx-1">|</span> Building cool stuff. Welcome to my link-in-bio page!</p>
+          <p className="text-center text-lg text-neutral-300 font-medium">Web Developer <span className="mx-1">|</span> Building cool stuff! <span className="mx-1">|</span> Welcome to my bio page <span role="img" aria-label="wave">👋</span></p>
         </div>
         {/* Links Card */}
         <div className="w-full rounded-2xl shadow-xl p-6 flex flex-col gap-4 border border-gray-800 bg-white/10 dark:bg-gray-900/30 backdrop-blur-lg transition-all duration-300 hover:shadow-2xl">
