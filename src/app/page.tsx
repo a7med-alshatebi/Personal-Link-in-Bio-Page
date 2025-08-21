@@ -6,8 +6,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-400 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 px-4 py-10">
-  <div className="relative flex flex-col items-center gap-8 w-full max-w-md p-0 sm:p-8 pt-0 sm:pt-12 animate-fade-in">
+  <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-800 via-gray-900 to-gray-950 dark:from-black dark:via-gray-900 dark:to-gray-950 px-4 py-10 animate-fade-in">
+  <div className="relative flex flex-col items-center gap-8 w-full max-w-md p-0 sm:p-8 pt-0 sm:pt-12">
         <div className="relative">
           <span className="absolute inset-0 rounded-full bg-gradient-to-tr from-pink-400 via-purple-400 to-indigo-400 p-[3px] animate-spin-slow"></span>
           <Image
@@ -59,10 +59,14 @@ export default function Home() {
         </Button>
       </div>
       <div className="flex justify-center gap-4 mt-6">
-        <a href="#" className="text-xs text-neutral-500 dark:text-neutral-400 hover:text-indigo-500 transition-colors">Portfolio</a>
-        <a href="#" className="text-xs text-neutral-500 dark:text-neutral-400 hover:text-pink-500 transition-colors">Blog</a>
+          <a
+            href="#"
+            className="px-4 py-2 rounded-lg bg-indigo-500 text-white text-sm font-semibold shadow hover:bg-indigo-600 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          >
+            Portfolio
+          </a>
       </div>
-      <footer className="w-full py-6 mt-10 flex items-center justify-center bg-white/20 dark:bg-black/20 rounded-xl shadow text-xs text-neutral-700 dark:text-neutral-300 text-center font-medium">
+  <footer className="w-full py-6 mt-10 flex items-center justify-center bg-gray-900/80 dark:bg-black/60 rounded-xl shadow text-xs text-neutral-200 dark:text-neutral-300 text-center font-medium">
         <span>&copy; {new Date().getFullYear()} <span className="font-semibold">AHMED ABDULNASSER</span>. All rights reserved.</span>
       </footer>
     </div>
