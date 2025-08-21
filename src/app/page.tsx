@@ -26,7 +26,7 @@ export default function Home() {
         {/* Links Card */}
         <div className="w-full rounded-2xl shadow-xl p-6 flex flex-col gap-4 border border-gray-800 bg-white/10 dark:bg-gray-900/30 backdrop-blur-lg transition-all duration-300 hover:shadow-2xl">
           <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-indigo-500/80 text-lg font-semibold shadow-md">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/a7med-alshatebi" target="_blank" rel="noopener noreferrer">
               <span className="inline-flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.75v14.5m7.25-7.25H4.75" />
@@ -36,7 +36,7 @@ export default function Home() {
             </a>
           </Button>
           <Button asChild className="w-full sm:w-auto transition-all duration-200 hover:scale-105 bg-gradient-to-r from-pink-500 via-yellow-400 to-purple-500 text-white text-lg font-semibold shadow-md border-none rounded-xl px-4 py-3 flex items-center justify-center" variant="outline">
-            <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center">
+            <a href="https://www.instagram.com/a7med.alshatebi/profilecard/?igsh=MWF4dmlicmJ5NWpo" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center">
               <span className="inline-flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                   <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5a5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5zm5.25.75a1 1 0 1 1-2 0a1 1 0 0 1 2 0z" />
@@ -46,7 +46,7 @@ export default function Home() {
             </a>
           </Button>
           <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-purple-500/80 text-lg font-semibold shadow-md" variant="secondary">
-            <a href="mailto:your@email.com">
+            <a href="mailto:ahmedalshatibi22@gmail.com">
               <span className="inline-flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 8.25v7.5a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 15.75v-7.5M3 8.25l9 6.75 9-6.75" />
@@ -56,7 +56,7 @@ export default function Home() {
             </a>
           </Button>
           <Button asChild className="w-full sm:w-auto transition-all duration-200 hover:scale-105 bg-gradient-to-r from-indigo-500 via-purple-400 to-pink-500 text-white text-lg font-semibold shadow-md border-none rounded-xl px-4 py-3 flex items-center justify-center" variant="ghost">
-            <a href="#" className="w-full flex items-center justify-center">
+            <a href="https://www.a7med-alshatebi.tech/" className="w-full flex items-center justify-center">
               <span className="inline-flex items-center gap-2">
                 {/* You can add an icon here if desired */}
                 Portfolio
