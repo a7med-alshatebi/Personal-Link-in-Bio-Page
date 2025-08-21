@@ -1,4 +1,3 @@
-
 "use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -6,69 +5,69 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-  <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-800 via-gray-900 to-gray-950 dark:from-black dark:via-gray-900 dark:to-gray-950 px-4 py-10 animate-fade-in">
-  <div className="relative flex flex-col items-center gap-8 w-full max-w-md p-0 sm:p-8 pt-0 sm:pt-12">
-        <div className="relative">
-          <span className="absolute inset-0 rounded-full bg-gradient-to-tr from-pink-400 via-purple-400 to-indigo-400 p-[3px] animate-spin-slow"></span>
-          <Image
-            src="/link-in-bio-pic.jpeg"
-            alt="Profile picture"
-            width={110}
-            height={110}
-            className="relative rounded-full border-4 border-white dark:border-neutral-800 shadow-xl z-10"
-          />
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-800 via-gray-900 to-gray-950 dark:from-black dark:via-gray-900 dark:to-gray-950 px-2 sm:px-4 py-8 animate-fade-in">
+      <div className="w-full max-w-md flex flex-col items-center gap-8">
+        {/* Profile Card */}
+        <div className="w-full bg-white/80 dark:bg-gray-900/80 rounded-2xl shadow-2xl p-6 flex flex-col items-center gap-5 border border-gray-200 dark:border-gray-800">
+          <div className="relative mb-2">
+            <span className="absolute inset-0 rounded-full bg-gradient-to-tr from-pink-400 via-purple-400 to-indigo-400 p-[3px] animate-spin-slow"></span>
+            <Image
+              src="/link-in-bio-pic.jpeg"
+              alt="Profile picture"
+              width={110}
+              height={110}
+              className="relative rounded-full border-4 border-white dark:border-neutral-800 shadow-xl z-10"
+            />
+          </div>
+          <h1 className="text-3xl font-extrabold text-neutral-900 dark:text-neutral-100 tracking-tight drop-shadow-lg text-center">AHMED ABDULNASSER</h1>
+          <p className="text-center text-lg text-neutral-700 dark:text-neutral-300 font-medium">Web Developer <span className="mx-1">|</span> Building cool stuff. Welcome to my link-in-bio page!</p>
         </div>
-        <h1 className="text-3xl font-extrabold text-neutral-900 dark:text-neutral-100 tracking-tight drop-shadow-lg">AHMED ABDULNASSER</h1>
-        <p className="text-center text-lg text-neutral-700 dark:text-neutral-300 font-medium mb-2">Web Developer <span className="mx-1">|</span> Building cool stuff. Welcome to my link-in-bio page!</p>
-
-
-
-
-
+        {/* Links Card */}
+        <div className="w-full bg-white/70 dark:bg-gray-900/70 rounded-2xl shadow-xl p-6 flex flex-col gap-4 border border-gray-200 dark:border-gray-800">
+          <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-indigo-500/80 text-lg font-semibold shadow-md">
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <span className="inline-flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.75v14.5m7.25-7.25H4.75" />
+                </svg>
+                GitHub
+              </span>
+            </a>
+          </Button>
+          <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-pink-500/80 text-lg font-semibold shadow-md" variant="outline">
+            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <span className="inline-flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.75l7.5 7.5-7.5 7.5" />
+                </svg>
+                Twitter
+              </span>
+            </a>
+          </Button>
+          <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-purple-500/80 text-lg font-semibold shadow-md" variant="secondary">
+            <a href="mailto:your@email.com">
+              <span className="inline-flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 8.25v7.5a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 15.75v-7.5M3 8.25l9 6.75 9-6.75" />
+                </svg>
+                Email Me
+              </span>
+            </a>
+          </Button>
+          <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-indigo-500/80 text-lg font-semibold shadow-md" variant="ghost">
+            <a href="#">
+              <span className="inline-flex items-center gap-2">
+                {/* You can add an icon here if desired */}
+                Portfolio
+              </span>
+            </a>
+          </Button>
+        </div>
+        {/* Footer */}
+        <footer className="w-full bg-gray-900/80 dark:bg-black/60 rounded-xl shadow-lg py-5 px-4 mt-8 flex items-center justify-center text-xs text-neutral-200 dark:text-neutral-300 text-center font-medium">
+          <span>&copy; {new Date().getFullYear()} <span className="font-semibold">AHMED ABDULNASSER</span>. All rights reserved.</span>
+        </footer>
       </div>
-      <div className="flex flex-col gap-4 w-full mt-2">
-        <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-indigo-500/80 text-lg font-semibold shadow-md">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-            <span className="inline-flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.75v14.5m7.25-7.25H4.75" />
-              </svg>
-              GitHub
-            </span>
-          </a>
-        </Button>
-        <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-pink-500/80 text-lg font-semibold shadow-md" variant="outline">
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
-            <span className="inline-flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.75l7.5 7.5-7.5 7.5" />
-              </svg>
-              Twitter
-            </span>
-          </a>
-        </Button>
-        <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-purple-500/80 text-lg font-semibold shadow-md" variant="secondary">
-          <a href="mailto:your@email.com">
-            <span className="inline-flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 8.25v7.5a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 15.75v-7.5M3 8.25l9 6.75 9-6.75" />
-              </svg>
-              Email Me
-            </span>
-          </a>
-        </Button>
-      </div>
-      <div className="flex justify-center gap-4 mt-6">
-          <a
-            href="#"
-            className="px-4 py-2 rounded-lg bg-indigo-500 text-white text-sm font-semibold shadow hover:bg-indigo-600 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-400"
-          >
-            Portfolio
-          </a>
-      </div>
-  <footer className="w-full py-6 mt-10 flex items-center justify-center bg-gray-900/80 dark:bg-black/60 rounded-xl shadow text-xs text-neutral-200 dark:text-neutral-300 text-center font-medium">
-        <span>&copy; {new Date().getFullYear()} <span className="font-semibold">AHMED ABDULNASSER</span>. All rights reserved.</span>
-      </footer>
     </div>
   );
 }
