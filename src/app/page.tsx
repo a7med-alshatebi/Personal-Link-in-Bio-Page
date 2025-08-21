@@ -56,7 +56,7 @@ export default function Home() {
             </a>
           </Button>
           <Button asChild className="w-full sm:w-auto transition-all duration-200 hover:scale-105 bg-gradient-to-r from-indigo-500 via-purple-400 to-pink-500 text-white text-lg font-semibold shadow-md border-none rounded-xl px-4 py-3 flex items-center justify-center" variant="ghost">
-            <a href="https://www.a7med-alshatebi.tech/" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center">
+            <a href="https://portfolio-nextjs-gamma-one.vercel.app/" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center">
               <span className="inline-flex items-center gap-2">
                 {/* You can add an icon here if desired */}
                 Portfolio
