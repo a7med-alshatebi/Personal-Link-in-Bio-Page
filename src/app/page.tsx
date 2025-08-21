@@ -6,56 +6,84 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-400 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 px-4 py-10">
-      <div className="relative flex flex-col items-center gap-8 max-w-md w-full backdrop-blur-lg bg-white/30 dark:bg-black/30 rounded-3xl shadow-2xl border border-white/20 dark:border-black/30 p-8 pt-12 animate-fade-in">
+    <div className="min-h-screen flex items-center justify-center bg-neutral-100 dark:bg-neutral-900 px-2 py-4 sm:px-4 sm:py-10">
+      <div className="relative flex flex-col items-center gap-8 w-full max-w-xl sm:max-w-xl bg-white dark:bg-neutral-900 rounded-xl shadow-md border border-neutral-200 dark:border-neutral-800 p-4 pt-8 sm:p-8 sm:pt-12 animate-fade-in">
         <div className="relative">
-          <span className="absolute inset-0 rounded-full bg-gradient-to-tr from-pink-400 via-purple-400 to-indigo-400 p-[3px] animate-spin-slow"></span>
           <Image
             src="/link-in-bio-pic.jpeg"
             alt="Profile picture"
             width={110}
             height={110}
-            className="relative rounded-full border-4 border-white dark:border-neutral-800 shadow-xl z-10"
+            className="rounded-full border-2 border-neutral-300 dark:border-neutral-700 shadow-sm"
           />
         </div>
-        <h1 className="text-3xl font-extrabold text-neutral-900 dark:text-neutral-100 tracking-tight drop-shadow-lg">AHMED ABDULNASSER</h1>
-        <p className="text-center text-lg text-neutral-700 dark:text-neutral-300 font-medium mb-2">Web Developer <span className="mx-1">|</span> Building cool stuff. Welcome to my link-in-bio page!</p>
-        <div className="flex flex-col gap-4 w-full mt-2">
-          <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-indigo-500/80 text-lg font-semibold shadow-md">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-              <span className="inline-flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.75v14.5m7.25-7.25H4.75" />
-                </svg>
-                GitHub
-              </span>
-            </a>
-          </Button>
-          <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-pink-500/80 text-lg font-semibold shadow-md" variant="outline">
-            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
-              <span className="inline-flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.75l7.5 7.5-7.5 7.5" />
-                </svg>
-                Twitter
-              </span>
-            </a>
-          </Button>
-          <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-purple-500/80 text-lg font-semibold shadow-md" variant="secondary">
-            <a href="mailto:your@email.com">
-              <span className="inline-flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 8.25v7.5a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 15.75v-7.5M3 8.25l9 6.75 9-6.75" />
-                </svg>
-                Email Me
-              </span>
-            </a>
-          </Button>
-        </div>
-        <div className="flex justify-center gap-4 mt-6">
-          <a href="#" className="text-xs text-neutral-500 dark:text-neutral-400 hover:text-indigo-500 transition-colors">Portfolio</a>
-          <a href="#" className="text-xs text-neutral-500 dark:text-neutral-400 hover:text-pink-500 transition-colors">Blog</a>
-        </div>
+  <h1 className="text-2xl sm:text-3xl font-bold text-neutral-800 dark:text-neutral-100 tracking-tight mb-2 text-center">AHMED ABDULNASSER</h1>
+  <p className="text-center text-sm sm:text-base text-neutral-600 dark:text-neutral-300 font-normal mb-2">Welcome to my personal page. Explore my journey, resources, and answers to common questions.</p>
+        {/* FAQ Section */}
+  <section className="w-full mt-4">
+          <h2 className="text-lg font-semibold text-neutral-700 dark:text-neutral-200 mb-2">Frequently Asked Questions</h2>
+          <ul className="space-y-3">
+            <li className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-3 sm:p-4 shadow-sm">
+              <span className="font-medium text-neutral-800 dark:text-neutral-100">What technologies do you use?</span>
+              <p className="text-neutral-600 dark:text-neutral-300 text-sm mt-1">I use modern web technologies like React, Next.js, and Tailwind CSS for most of my projects.</p>
+            </li>
+            <li className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-3 sm:p-4 shadow-sm">
+              <span className="font-medium text-neutral-800 dark:text-neutral-100">How can I collaborate with you?</span>
+              <p className="text-neutral-600 dark:text-neutral-300 text-sm mt-1">Feel free to reach out via email or connect on LinkedIn for collaboration opportunities.</p>
+            </li>
+            <li className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-3 sm:p-4 shadow-sm">
+              <span className="font-medium text-neutral-800 dark:text-neutral-100">Do you offer mentorship?</span>
+              <p className="text-neutral-600 dark:text-neutral-300 text-sm mt-1">Yes, I occasionally mentor aspiring developers. Contact me for details.</p>
+            </li>
+          </ul>
+        </section>
+
+        {/* Timeline Section */}
+  <section className="w-full mt-4">
+          <h2 className="text-lg font-semibold text-neutral-700 dark:text-neutral-200 mb-2">My Journey</h2>
+          <ol className="border-l-2 border-neutral-300 dark:border-neutral-700 pl-2 sm:pl-4 space-y-4">
+            <li>
+              <div className="text-sm text-neutral-700 dark:text-neutral-300">2020: Started learning web development.</div>
+            </li>
+            <li>
+              <div className="text-sm text-neutral-700 dark:text-neutral-300">2022: Built my first full-stack project.</div>
+            </li>
+            <li>
+              <div className="text-sm text-neutral-700 dark:text-neutral-300">2023: Joined a remote team and contributed to open source.</div>
+            </li>
+            <li>
+              <div className="text-sm text-neutral-700 dark:text-neutral-300">2025: Launched this personal site.</div>
+            </li>
+          </ol>
+        </section>
+
+        {/* Resources Section */}
+  <section className="w-full mt-4">
+          <h2 className="text-lg font-semibold text-neutral-700 dark:text-neutral-200 mb-2">Resources</h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <li className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-3 sm:p-4 shadow-sm">
+              <a href="https://nextjs.org/docs" target="_blank" rel="noopener noreferrer" className="font-medium text-neutral-800 dark:text-neutral-100 hover:underline">Next.js Docs</a>
+              <p className="text-neutral-600 dark:text-neutral-300 text-xs mt-1">Official documentation for Next.js.</p>
+            </li>
+            <li className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-3 sm:p-4 shadow-sm">
+              <a href="https://tailwindcss.com/docs" target="_blank" rel="noopener noreferrer" className="font-medium text-neutral-800 dark:text-neutral-100 hover:underline">Tailwind CSS Docs</a>
+              <p className="text-neutral-600 dark:text-neutral-300 text-xs mt-1">Learn how to style with Tailwind CSS.</p>
+            </li>
+            <li className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-3 sm:p-4 shadow-sm">
+              <a href="https://ui.shadcn.com/docs" target="_blank" rel="noopener noreferrer" className="font-medium text-neutral-800 dark:text-neutral-100 hover:underline">shadcn/ui Docs</a>
+              <p className="text-neutral-600 dark:text-neutral-300 text-xs mt-1">Explore shadcn/ui components.</p>
+            </li>
+            <li className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-3 sm:p-4 shadow-sm">
+              <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer" className="font-medium text-neutral-800 dark:text-neutral-100 hover:underline">React Docs</a>
+              <p className="text-neutral-600 dark:text-neutral-300 text-xs mt-1">React official learning resources.</p>
+            </li>About Me section
+Skills with colorful badges
+Social links with interactive buttons
+Featured Projects grid
+Testimonials
+Contact form
+          </ul>
+        </section>
       </div>
       <footer className="mt-10 text-xs text-neutral-100 dark:text-neutral-400 text-center drop-shadow-lg">
         &copy; {new Date().getFullYear()} AHMED ABDULNASSER. All rights reserved.
