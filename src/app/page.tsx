@@ -13,8 +13,8 @@ export default function Home() {
             <span className="absolute inset-0 rounded-full bg-gradient-to-tr from-pink-400 via-purple-400 to-indigo-400 p-[3px] animate-spin-slow"></span>
             <span className="absolute inset-0 rounded-full blur-xl opacity-40 bg-gradient-to-tr from-pink-400 via-purple-400 to-indigo-400"></span>
             <Image
-              src="/file.svg"
-              alt="MeTime image"
+              src="/mitime.jpeg"
+              alt="profile picture"
               width={110}
               height={110}
               className="relative rounded-full border-4 border-white dark:border-neutral-800 shadow-xl z-10"
