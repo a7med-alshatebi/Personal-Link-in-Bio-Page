@@ -13,7 +13,7 @@ export default function Home() {
             <span className="absolute inset-0 rounded-full bg-gradient-to-tr from-pink-400 via-purple-400 to-indigo-400 p-[3px] animate-spin-slow"></span>
             <span className="absolute inset-0 rounded-full blur-xl opacity-40 bg-gradient-to-tr from-pink-400 via-purple-400 to-indigo-400"></span>
             <Image
-              src="/mitime.jpeg"
+              src="metime.jpeg"
               alt="profile picture"
               width={110}
               height={110}
@@ -35,7 +35,7 @@ export default function Home() {
               </span>
             </a>
           </Button>
-          <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-blue-700/80 text-lg font-semibold shadow-md" variant="outline">
+          <Button asChild className="w-full transition-all duration-200 hover:scale-105 bg-[#0077B5] hover:bg-[#005983] text-white text-lg font-semibold shadow-md border-none rounded-xl px-4 py-3 flex items-center justify-center" variant="outline">
             <a href="https://www.linkedin.com/in/a7med-alshatebi/" target="_blank" rel="noopener noreferrer">
               <span className="inline-flex items-center gap-2">
                 <svg xmlns="http://www.linkedin.com/in/a7med-alshatebi-1a3841380" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
