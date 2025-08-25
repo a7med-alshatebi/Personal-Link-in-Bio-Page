@@ -25,8 +25,8 @@ export default function Home() {
         </div>
         {/* Links Card */}
         <div className="w-full rounded-2xl shadow-xl p-6 flex flex-col gap-4 border border-gray-800 bg-white/10 dark:bg-gray-900/30 backdrop-blur-lg transition-all duration-300 hover:shadow-2xl">
-          <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-indigo-500/80 text-lg font-semibold shadow-md">
-            <a href="https://github.com/a7med-alshatebi" target="_blank" rel="noopener noreferrer">
+          <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-indigo-500/80 text-lg font-semibold shadow-md rounded-xl" >
+            <a href="https://github.com/a7med-alshatebi" target="_blank" rel="noopener noreferrer" className="text-white hover:text-black">
               <span className="inline-flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.75v14.5m7.25-7.25H4.75" />
@@ -45,7 +45,7 @@ export default function Home() {
               </span>
             </a>
           </Button>
-          <Button asChild className="w-full sm:w-auto transition-all duration-200 hover:scale-105 bg-gradient-to-r from-pink-500 via-yellow-400 to-purple-500 text-white text-lg font-semibold shadow-md border-none rounded-xl px-4 py-3 flex items-center justify-center" variant="outline">
+          <Button asChild className="w-full transition-all duration-200 hover:scale-105 bg-gradient-to-r from-pink-500 via-yellow-400 to-purple-500 text-white text-lg font-semibold shadow-md border-none rounded-xl px-4 py-3 flex items-center justify-center" variant="outline">
             <a href="https://www.instagram.com/a7med.alshatebi/profilecard/?igsh=MWF4dmlicmJ5NWpo" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center">
               <span className="inline-flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -55,8 +55,8 @@ export default function Home() {
               </span>
             </a>
           </Button>
-          <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-purple-500/80 text-lg font-semibold shadow-md" variant="secondary">
-            <a href="mailto:ahmedalshatibi22@gmail.com">
+          <Button asChild className="w-full transition-all duration-200 hover:scale-105 hover:bg-purple-500/80 text-lg font-semibold shadow-md rounded-xl text-white" variant="secondary">
+            <a href="mailto:ahmedalshatibi22@gmail.com" className="text-white hover:text-black">
               <span className="inline-flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 8.25v7.5a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 15.75v-7.5M3 8.25l9 6.75 9-6.75" />
@@ -65,7 +65,7 @@ export default function Home() {
               </span>
             </a>
           </Button>
-          <Button asChild className="w-full sm:w-auto transition-all duration-200 hover:scale-105 bg-gradient-to-r from-indigo-500 via-purple-400 to-pink-500 text-white text-lg font-semibold shadow-md border-none rounded-xl px-4 py-3 flex items-center justify-center" variant="ghost">
+          <Button asChild className="w-full transition-all duration-200 hover:scale-105 bg-gradient-to-r from-indigo-500 via-purple-400 to-pink-500 text-white text-lg font-semibold shadow-md border-none rounded-xl px-4 py-3 flex items-center justify-center" variant="ghost">
             <a href="https://portfolio-nextjs-gamma-one.vercel.app/" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center">
               <span className="inline-flex items-center gap-2">
                 {/* You can add an icon here if desired */}
