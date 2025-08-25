@@ -36,7 +36,7 @@ export default function Home() {
             </a>
           </Button>
           <Button asChild className="w-full transition-all duration-200 hover:scale-105 bg-[#0077B5] hover:bg-[#005983] text-white text-lg font-semibold shadow-md border-none rounded-xl px-4 py-3 flex items-center justify-center" variant="outline">
-            <a href="https://www.linkedin.com/in/a7med-alshatebi/" target="_blank" rel="noopener noreferrer">
+            <a href="www.linkedin.com/in/a7med-alshatebi-1a3841380" target="_blank" rel="noopener noreferrer">
               <span className="inline-flex items-center gap-2">
                 <svg xmlns="http://www.linkedin.com/in/a7med-alshatebi-1a3841380" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                   <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.07-.93-2-2-2s-2 .93-2 2v4.5h-3v-9h3v1.22c.41-.63 1.36-1.22 2.25-1.22 1.93 0 3.5 1.57 3.5 3.5v5.5z" />
